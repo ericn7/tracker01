@@ -1,0 +1,101 @@
+.container {
+  width: 1000px;
+  float: left;
+}
+
+
+body {
+  background: #3C484F;
+}
+
+header {
+  background: #FFFFFF;
+  padding: 10px;
+}
+
+.sidebar {
+  background: #BCC2D6;
+    padding-top: 10px;
+        padding-bottom: 100px;
+  /*#AAAAAA*/
+  width: 90px;
+  float: left;
+}
+.vertspace {
+  background: #3C484F;
+
+  float: left;
+  width: 10px;
+}
+
+.content {
+  background: #FFFFFF;
+  width: 860px;
+  float: left;
+  padding: 20px;
+}
+
+/* Links */
+a {
+  color: #09c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+
+/* Navigation */
+
+nav {
+  float: right;
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  /*padding: 0.2em 0;*/
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+snav {
+  float: right;
+  /*background-color: grey;*/
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+snav ul {
+  margin: 0;
+  padding: 0;
+}
+
+snav ul li {
+  list-style-type: none;
+  /*display: inline-block;*/
+  /*padding: 0.2em 0;*/
+}
+
+snav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+
+

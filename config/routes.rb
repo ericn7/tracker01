@@ -1,4 +1,24 @@
 Tracker01::Application.routes.draw do
+
+  match '/auth/:provider/callback' => 'authentications#create'
+  
+  devise_for :users, :controllers => { :registrations => 'registrations' }  
+
+  devise_for :users
+
+  devise_for :installs
+
+  resources :authentications
+
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/testpage',   :to => 'pages#testpage'
+  #get "pages/testpage"
+  #get "pages/contact"
+  #get "pages/about"
+  
+  root :to => "pages#home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

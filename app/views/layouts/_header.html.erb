@@ -1,0 +1,26 @@
+<header>
+  <%= link_to logo, root_path %>
+
+  <nav>
+  	<ul>
+<!--
+
+	  <li><%= link_to "Header Link 1", '#' %></li>
+	  <li><%= link_to "Header Link 2", '#' %></li>
+
+	-->
+
+  <% if user_signed_in? %>  
+	Signed in as <%= current_user.email %>. Not you?  
+	<li><%= link_to "Sign out", destroy_user_session_path %></li>  
+  <% else %>  
+	<li><%= link_to "Sign up", new_user_registration_path %></li> or  
+	<li><%= link_to "Sign in", new_user_session_path %></li>  
+  <% end %> 
+  <li><%= link_to "AUTH", authentications_path %></li> 
+ 	</ul>
+
+
+  </nav>
+
+</header>
